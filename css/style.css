@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #000000;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.container {
+  background-color: white;
+  height: 100vh;
+  margin: 0 auto;
+  width: 100rem;
+}
+
+section {
+}
+
+@media screen and (min-width: 110em) {
+
+}

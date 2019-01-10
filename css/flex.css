@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Gotham", sans-serif;
+}
+
+.container {
+  background-color: white;
+  height: 100vh;
+  width: 75%;
+  margin: auto;
+  justify-content: center;
+}
+
+.case-study-one {
+  background-color: #FD00A7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 20rem;
+  width: 20rem;
+  margin: auto;
+  align-items: center;
+}
+
+.case-study-two {
+  background-color: #636363;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  height: 20rem;
+  width: 20rem;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer {
+  border-top-style: solid;
+  border-top-width: thin;
+  display: center;
+  padding-top: 2rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding-left: 5rem;
+  padding-top:2rem;
+  width: 300px;
+}
+
+li {
+  display: flex;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: "Gotham", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-family: "Gotham", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight:lighter;
+
+}
+
+.nav {
+  background-color: #ffffff;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 5rem;
+}
+
+ul {
+  background-color: #FFFFFF;
+  height: 3rem;
+}
+
+@media screen and (min-width: 60rem) {
+
+}

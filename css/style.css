@@ -4,26 +4,195 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #000000;
+  background-color: #FFFFFF;
+  font-family: "Gotham", sans-serif;
 }
 
-p {
-  font-size: 1.6rem;
+.backpack_homepage {
+  padding-right: 4rem;
+  padding-bottom: 5rem;
+}
+
+.bio-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+}
+
+.button {
+  background-color: #EE1286;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight:600;
+  cursor: pointer;
 }
 
 .container {
   background-color: white;
   height: 100vh;
-  margin: 0 auto;
-  width: 100rem;
+  width: 68%;
+  margin: auto;
+  justify-content: center;
+}
+
+.case-study {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  display: center;
+  padding-top: 2rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  padding-top: 10rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h5 {
+  font-family: "Abril Fatface", serif;
+  font-size: 2.4rem;
+  text-align: center;
+  font-style: bold;
+}
+
+h6 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.hero {
+  background: url(../images/homepage2.jpg) center / cover ;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-text {
+  text-align: center;
+  padding-top: 35rem;
+  padding-left: 47rem;
+  padding-right: 47rem;
+}
+
+hr.new1 {
+  border: .5px solid;
+  width: 350px;
+}
+
+
+li {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding-left: 5rem;
+  padding-top: 2rem;
+  width: 300px;
+}
+
+.nav {
+  background-color: #ffffff;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 5rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.25rem;
+  padding-bottom: 5rem;
+}
+
+.print-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
 }
 
 section {
+  align: center;
 }
 
-@media screen and (min-width: 110em) {
+ul {
+  background-color: #FFFFFF;
+  height: 3rem;
+}
+
+@media screen and (min-width: 60rem) {
 
 }

@@ -4,53 +4,73 @@
     <title>Ashack Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
-    <header style="display: block;">
-      <div id="logo">
-        <img src="images/ashack_logo_pink.jpg" alt="Ashack logo" style="display: inline;">
-          <span class="inner"></span>
-        <h1> Christine Ashack </h1>
     <!--nav bar-->
-      <nav id="primary_nav" style="display: inline-block;">
-        <ul id="navbar">
-          <li> Work </li>
-          <li> About </li>
-          <li> Contact </li>
-        </ul>
-      </nav>
-      <hr>
-      <main style="display: block;">
-        <div class="container" style="display: center;">
-          <section class="hero">
-            <img src="images/ashack_homepage.jpg" alt="hero image" style="display: inline;">
-            <p>
-              Hello. <br>
-              I'm Christine Ashack, a UX/UI designer and print designer based in Minneapolis, Minn. In my spare time I love to spend time with my dog Olive, read and bake.
-            </p>
+    <header class="nav" style="display: flex">
+      <div class="logo">
+        <img src="images/ashack_logo_horizontal.png" alt="Ashack logo" width="500px" height="100px">
+      </div>
+      <div>
+        <div>
+          <ul class="navbar">
+            <li class="tab one">Work</li>
+            <li class="tab two">About</li>
+            <li class="tab three">Contact</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <body>
+      <main>
+        <div>
+          <section class="hero" id="hero">
+            <div class="hero-image">
+            </div>
+            <div class="hero-text">
+              <h5>Hello.</h5> <br>
+              <p>I'm Christine Ashack, a UX/UI designer and print designer based in Minneapolis, Minn. In my spare time I love to spend time with my dog Olive, read and bake.</p>
+            </div>
           </section>
+        </div>
+        <div class="container">
           <section>
             <h2>Featured case studies</h2>
-              <h3>Backpack</h3>
-                <img src="images/backpack_homepage.png" alt="backpack homepage" style="display: inline-block;">
-                <p>This cloud storage and organization site allows users to keep everything they need in one space. They can crete, upload and organize files and folders, to make one part of your life easy.</p>
+              <div class="case-study">
+                <div class="backpack_homepage">
+                  <img src="images/backpack_homepage.png" alt="backpack homepage" width="400px" height="300px">
+                </div>
+                <div>
+                  <h3>Backpack</h3>
+                    <p>This cloud storage and organization site allows users to keep everything they need in one space. They can create, upload and organize files and folders, to make one part of your life easy.</p>
+                </div>
+              </div>
           </section>
+          <hr class="new1">
           <section>
             <h2>Print design</h2>
-            <img src="images/ashack_print_one.jpg" alt="print one" style="display: inline-block;">
-            <img src="images/ashack_print_two.jpg" alt="print two" style="display: inline-block;">
-            <img src="images/ashack_print_three.jpg" alt="print three" style="display: inline-block;">
-            <img src="images/ashack_print_four.jpg" alt="print four" style="display: inline-block;">
+              <div class="print-images">
+                <img src="images/ashack_print_one.jpg" alt="print one" width="200" height="400">
+                <img src="images/ashack_print_two.jpg" alt="print two" width="200" height="400">
+                <img src="images/ashack_print_three.jpg" alt="print three" width="200" height="400">
+                <img src="images/ashack_print_four.jpg" alt="print four" width="200" height="400">
+              </div>
           </section>
         <hr>
-        <footer class="mdl-mini-footer">
-         <ul class="mdl-mini-footer__link-list">
-           <li><a href="https://www.linkedin.com/in/chrissy-ashack-51524598/">LinkedIn</a></li>
-           <li><a href="https://github.com/chrissyashack">GitHub</a></li>
-           <li><a href="https://www.facebook.com/chrissy.ashack">Facebook</a></li>
-           <li><a href="https://twitter.com/cashack">Twitter</a></li>
-           <li><a href="mailto:chrissy.ashack@gmail.com">Email</a></li>
-         </ul>
-       </footer>
+        <div class="footer">
+          <footer>
+            <h6>Contact Me</h6>
+            <ul class="flex-container">
+              <li><a href="mailto:chrissy.ashack@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/chrissy-ashack-51524598/">LinkedIn</a></li>
+              <li><a href="https://github.com/chrissyashack">GitHub</a></li>
+              <li><a href="https://www.facebook.com/chrissy.ashack">Facebook</a></li>
+              <li><a href="https://twitter.com/cashack">Twitter</a></li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

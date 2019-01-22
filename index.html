@@ -8,38 +8,36 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
     <!--nav bar-->
-    <header class="nav" style="display: flex">
-      <div class="logo">
-        <img src="images/ashack_logo_horizontal.png" alt="Ashack logo" width="500px" height="100px">
-      </div>
-      <div>
-        <div>
-          <ul class="navbar">
-            <li class="tab one">Work</li>
-            <li class="tab two">About</li>
-            <li class="tab three">Contact</li>
-          </ul>
-        </div>
-      </div>
+    <header class="header">
+      <a href="" class="logo">Christine Ashack</a>
+        <!-- <img src="images/logo_vertical.png" alt="Ashack logo" width="400px" height="75px"></a>-->
+        <!-- <img src="images/logo_horizontal.png" alt="Ashack logo" width="400px" height="75px"></a>-->
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </header>
     <body>
       <main>
         <div>
           <section class="hero" id="hero">
-            <div class="hero-image">
-            </div>
             <div class="hero-text">
               <h5>Hello.</h5> <br>
               <p>I'm Christine Ashack, a UX/UI designer and print designer based in Minneapolis, Minn. In my spare time I love to spend time with my dog Olive, read and bake.</p>
             </div>
+            <div class="hero-image">
+              <img src="images/homepage2.jpg" width="450px" height="300px">
+            </div>
           </section>
-        </div>
         <div class="container">
           <section>
             <h2>Featured case studies</h2>
               <div class="case-study">
-                <div class="backpack_homepage">
-                  <img src="images/backpack_homepage.png" alt="backpack homepage" width="400px" height="300px">
+                <div class="backpack-homepage">
+                  <img src="images/backpack_homepage.png" width="450px" height="350px">
                 </div>
                 <div>
                   <h3>Backpack</h3>
@@ -51,22 +49,29 @@
           <section>
             <h2>Print design</h2>
               <div class="print-images">
-                <img src="images/ashack_print_one.jpg" alt="print one" width="200" height="400">
-                <img src="images/ashack_print_two.jpg" alt="print two" width="200" height="400">
-                <img src="images/ashack_print_three.jpg" alt="print three" width="200" height="400">
-                <img src="images/ashack_print_four.jpg" alt="print four" width="200" height="400">
+                <img src="images/ashack_print_one.jpg" alt="print one" width="250px" height="485px">
+                <img src="images/ashack_print_two.jpg" alt="print two" width="250px" height="485px">
+                <img src="images/ashack_print_three.jpg" alt="print three" width="250px" height="485px">
+                <img src="images/ashack_print_four.jpg" alt="print four" width="250px" height="485px">
               </div>
           </section>
         <hr>
         <div class="footer">
           <footer>
             <h6>Contact Me</h6>
-            <ul class="flex-container">
-              <li><a href="mailto:chrissy.ashack@gmail.com">Email</a></li>
-              <li><a href="https://www.linkedin.com/in/chrissy-ashack-51524598/">LinkedIn</a></li>
-              <li><a href="https://github.com/chrissyashack">GitHub</a></li>
-              <li><a href="https://www.facebook.com/chrissy.ashack">Facebook</a></li>
-              <li><a href="https://twitter.com/cashack">Twitter</a></li>
+            <ul class="flex-container-footer">
+              <li><a href="mailto:chrissy.ashack@gmail.com" target="_blank"></li>
+                <img src="images/email_button.png" alt="email link" width="40" height="40"></a>
+              <li><a href="https://www.linkedin.com/in/chrissy-ashack-51524598/" target="_blank"></li>
+                <img src="images/linkedin_button.png" alt="linkedin link" width="40" height="40"></a>
+              <li><a href="https://github.com/chrissyashack"  target="_blank"></li>
+                <img src="images/github_button.png" alt="github link" width="40" height="40"></a>
+              <li><a href="https://www.facebook.com/chrissy.ashack" target="_blank"></li>
+                <img src="images/facebook_button.png" alt="facebook link" width="40" height="40"></a>
+              <li><a href="https://twitter.com/cashack" target="_blank"></li>
+                <img src="images/twitter_button.png" alt="twitter link" width="40" height="40"></a>
+              <li><a href="https://www.instagram.com/cashack/" target="_blank"></li>
+                <img src="images/instagram_button.png" alt="twitter link" width="40" height="40"></a>
             </ul>
           </footer>
         </div>

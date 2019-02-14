@@ -6,30 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
     <!--nav bar-->
     <header class="header">
-      <a href="" class="logo">Christine Ashack</a>
-        <!-- <img src="images/logo_vertical.png" alt="Ashack logo" width="400px" height="75px"></a>-->
-        <!-- <img src="images/logo_horizontal.png" alt="Ashack logo" width="400px" height="75px"></a>-->
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
+      <a href="" class="logo" alt="Ashack logo"</a>
+    <a href="#main-menu" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+<span class="hamburger" aria-hidden="true"><img src="images/hamburger.svg"></span>
+</a>
+  <nav id="main-menu" class="main-menu" aria-label="Main menu">
+    <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close menu">
+<span class="close" aria-hidden="true"></span></a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+      </nav>
+  <a href="#menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+</header>
     <body>
       <main>
-        <div>
-          <section class="hero" id="hero">
+          <section class="hero">
             <div class="hero-text">
               <h5>Hello.</h5> <br>
               <p>I'm Christine Ashack, a UX/UI designer and print designer based in Minneapolis, Minn. In my spare time I love to spend time with my dog Olive, read and bake.</p>
-            </div>
-            <div class="hero-image">
-              <img src="images/homepage2.jpg" width="450px" height="300px">
             </div>
           </section>
         <div class="container">
@@ -37,9 +39,9 @@
             <h2>Featured case studies</h2>
               <div class="case-study">
                 <div class="backpack-homepage">
-                  <img src="images/backpack_homepage.png" width="450px" height="350px">
+                  <img src="images/backpack_homepage.png" width="300px" height="200px">
                 </div>
-                <div>
+                <div class="cs-text">
                   <h3>Backpack</h3>
                     <p>This cloud storage and organization site allows users to keep everything they need in one space. They can create, upload and organize files and folders, to make one part of your life easy.</p>
                 </div>
@@ -49,10 +51,10 @@
           <section>
             <h2>Print design</h2>
               <div class="print-images">
-                <img src="images/ashack_print_one.jpg" alt="print one" width="250px" height="485px">
-                <img src="images/ashack_print_two.jpg" alt="print two" width="250px" height="485px">
-                <img src="images/ashack_print_three.jpg" alt="print three" width="250px" height="485px">
-                <img src="images/ashack_print_four.jpg" alt="print four" width="250px" height="485px">
+                <img src="images/ashack_print_one.jpg" alt="print one" width="230px" height="465px">
+                <img src="images/ashack_print_two.jpg" alt="print two" width="230px" height="465px">
+                <img src="images/ashack_print_three.jpg" alt="print three" width="230px" height="465px">
+                <img src="images/ashack_print_four.jpg" alt="print four" width="230px" height="465px">
               </div>
           </section>
         <hr>

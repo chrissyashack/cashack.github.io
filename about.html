@@ -6,26 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
   </head>
   <!--nav bar-->
-    <header class="header">
-      <a href="" class="logo">Christine Ashack</a>
-        <!-- <img src="images/ashack_logo_horizontal.png" alt="Ashack logo" width="400px" height="75px"></a>-->
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-      <ul class="menu">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
+  <header class="header">
+    <a href="" class="logo" alt="Ashack logo"</a>
+  <a href="#main-menu" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+<span class="hamburger" aria-hidden="true"><img src="images/hamburger.svg"></span>
+</a>
+<nav id="main-menu" class="main-menu" aria-label="Main menu">
+  <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close menu">
+<span class="close" aria-hidden="true"></span></a>
+  <ul>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+    </nav>
+<a href="#menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+</header>
     <body>
       <main>
         <div class="container">
           <section>
             <h2>About me</h2>
               <div class="bio-photo">
-                <img src="images/Ashack.jpg" alt="bio picture" style="display: center" width="600px" height="700px">
+                <img src="images/Ashack.jpg" alt="bio picture" width="500px" height="600px">
               </div>
             <p>My background is in journalism and we’re taught as journalists to be truthful and unbiased. I strive to bring those attributes to my designs. I want to be truthful to the ideas, concepts and stories I’m designing. I want to draw people into the story. I want to truthfully portray the story and to inform people on topics. I think being unbiased also works hand-in-hand with being inclusive. Truthfulness and inclusivity are so important to the world.</p>
             <p>Inclusivity is something every workforce can benefit from. I walked by a meeting of a digital design department once and it was six men and one woman. I want to help other women get into the field and make sure their voices are heard. Every design gets better when there are diverse voices giving feedback, and for that to happen, the field needs to be more diverse.</p>

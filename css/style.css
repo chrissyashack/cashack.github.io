@@ -10,7 +10,7 @@ html {
   body {
     margin: 0;
     background-color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   a {
@@ -60,6 +60,10 @@ html {
     margin: auto;
     justify-content: center;
     }
+
+  .credit {
+    float:right;
+  }
 
   .flex-container {
       display: flex;
@@ -395,6 +399,13 @@ p.two {
   padding-top: 2rem;
 }
 
+p.three {
+  font-weight: 200;
+  font-size: 1rem;
+  padding-top: 40rem;
+  padding-right: 1rem;
+}
+
 .personas {
   display: flex;
   flex-flow: row;
@@ -498,7 +509,7 @@ textarea {
 @media screen and (min-width: 768px) {
   body {
     background-color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .container {
@@ -553,6 +564,10 @@ textarea {
   .cs-text {
     max-width:60rem;
     align-content:left;
+  }
+
+  .credit {
+    float:right;
   }
 
   .flex-container {
@@ -685,6 +700,13 @@ p.two {
   line-height: 2.75rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
+}
+
+p.three {
+  font-weight: 200;
+  font-size: 1rem;
+  padding-top: 70rem;
+  padding-right: 1rem;
 }
 
 .personas {

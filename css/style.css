@@ -14,7 +14,8 @@ html {
   }
 
   a {
-    color: #000;
+    text-decoration: none;
+    color:#EE1286;
   }
 
   .backpack-homepage {
@@ -95,11 +96,6 @@ html {
 /* header styles */
 
   h1 {
-    font-size: 3.5rem;
-    padding-top: 10rem;
-  }
-
-  h2 {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 800;
@@ -108,13 +104,21 @@ html {
     text-align: center;
   }
 
-  h3 {
+  h2 {
     font-size: 2rem;
     font-weight: 600;
     padding-bottom: 2rem;
     padding-top: 3rem;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   h4 {
@@ -126,10 +130,12 @@ html {
   }
 
   h5 {
-    font-family: "Abril Fatface", serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
     text-align: center;
-    font-style: bold;
   }
 
   h6 {
@@ -336,6 +342,13 @@ header {
     text-align: center;
   }
 
+  .hero-header {
+    font-family: "Abril Fatface", cursive;
+    font-size: 2.4rem;
+    text-align: center;
+    font-style: bold;
+  }
+
   hr.new1 {
     border: .5px solid;
     max-width: 250px;
@@ -361,6 +374,34 @@ header {
     font-weight: 300;
   }
 
+  p.one{
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.75rem;
+  padding-bottom: 2rem;
+  }
+
+  p.two {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.75rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  p.three {
+    font-weight: 200;
+    font-size: 1rem;
+    padding-top: 40rem;
+    padding-right: 1rem;
+  }
+
+  p.four {
+    font-weight: 300;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
   .print-images {
     padding-bottom: 8rem;
     display: flex;
@@ -384,28 +425,6 @@ header {
     height: 3rem;
   }
 
-  p.one{
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 2.75rem;
-  padding-bottom: 2rem;
-}
-
-p.two {
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 2.75rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-}
-
-p.three {
-  font-weight: 200;
-  font-size: 1rem;
-  padding-top: 40rem;
-  padding-right: 1rem;
-}
-
 .personas {
   display: flex;
   flex-flow: row;
@@ -413,6 +432,10 @@ p.three {
   justify-content: center;
   align-content: center;
   padding: auto;
+}
+
+strong {
+  font-weight: 600;
 }
 
 .persona-column img {
@@ -451,65 +474,15 @@ p.three {
   padding-bottom: 5rem;
 }
 
-/* Contact form
-textarea {
-	resize: none;
-}
-.form-container {
-  text-align:center;
-  align-items: center;
-}
-.form-label {
-	font-size: 12px;
-	color: #000;
-	margin: 0;
-	display: block;
-	opacity: 1;
-	-webkit-transition: .333s ease top, .333s ease opacity;
-	transition: .333s ease top, .333s ease opacity;
-  padding-bottom: 1rem;
-}
-.form-control {
-	border-radius: 0;
-	border-color: #EE1286;
-   	border-width: 0 0 2px 0;
-   	border-style: none none solid none;
-   	box-shadow: none;
-    padding-bottom: 1rem;
-}
-.form-control:focus {
-	box-shadow: none;
-}
-.js-hide-label {
-	opacity: 0;
-}
-.js-unhighlight-label {
-	color: #999
-}
-.btn-start-order {
-	background: 0 0 #ffffff;
-    border: 1px solid #000;
-    border-radius: 3px;
-    color: #2f323a;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    line-height: inherit;
-    margin: 30px 0;
-    padding: 10px 30px;
-    text-transform: uppercase;
-    transition: all 0.25s ease 0s;
-}
-.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
-	background-color: #EE1286;
-	color: #fff;
-  border: 1px solid #fff;
-}
-} */
-
 @media screen and (min-width: 768px) {
   body {
     background-color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color:#EE1286;
   }
 
   .container {
@@ -589,34 +562,79 @@ textarea {
     margin: auto;
   }
 
+  .flip-cards {
+    display: block;
+  }
+
+  .flip-card-one .flip-card-two {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-one-inner .flip-card-two-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-one:hover .flip-card-one-inner .flip-card-two:hover .flip-card-two-inner  {
+  transform: rotateY(180deg);
+}
+
+.flip-card-one-front, .flip-card-one-back .flip-card-two-front, .flip-card-two-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-one-front .flip-card-two-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-one-back .flip-card-two-back {
+  background-color: #EE1286;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
   .footer {
     display: center;
     padding-top: 2rem;
   }
 
   h1 {
-    font-size: 3.5rem;
-    padding-top: 10rem;
-  }
-
-  h2 {
     text-transform: uppercase;
     font-size: 2.5rem;
     font-weight: 800;
     padding-bottom: 3rem;
     padding-top: 5rem;
     text-align: center;
-    margin: auto;
   }
 
-  h3 {
+  h2 {
     font-size: 2rem;
     font-weight: 600;
     padding-bottom: 2rem;
-    padding-top: 5rem;
+    padding-top: 3rem;
     text-transform: uppercase;
     text-align: center;
-    margin: auto;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   h4 {
@@ -628,15 +646,17 @@ textarea {
   }
 
   h5 {
-    font-family: "Abril Fatface", serif;
-    font-size: 2.4rem;
-    text-align: center;
-    font-style: bold;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    text-align: left
   }
 
   h6 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 800;
     padding-bottom: 2rem;
     padding-top: 3rem;
     text-align: center;
@@ -672,6 +692,13 @@ textarea {
     padding-top: 40rem;
     text-align: center;
     }
+
+  .hero-header {
+    font-family: "Abril Fatface", cursive;
+    font-size: 2.4rem;
+    text-align: center;
+    font-style: bold;
+  }
 
   li {
     display: flex;
@@ -709,6 +736,12 @@ p.three {
   padding-right: 1rem;
 }
 
+p.four {
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
 .personas {
   display: flex;
   flex-flow: row;
@@ -740,6 +773,10 @@ p.three {
   section {
     align: center;
   }
+
+strong {
+  font-weight: 600;
+}
 
   ul {
     background-color: #FFFFFF;

@@ -95,57 +95,57 @@ html {
 
 /* header styles */
 
-  h1 {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-weight: 800;
-    padding-bottom: 3rem;
-    padding-top: 5rem;
-    text-align: center;
-  }
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+  text-align: center;
+}
 
-  h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    padding-bottom: 2rem;
-    padding-top: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-  }
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  h3 {
-    font-size: 1.5rem;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-  h4 {
-    font-size: 1.5rem;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
+h4 {
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-  h5 {
-    font-size: 2rem;
-    font-weight: 600;
-    padding-bottom: 2rem;
-    padding-top: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-  }
+h5 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  text-transform: uppercase;
+  text-align: left
+}
 
-  h6 {
-    font-size: 2rem;
-    font-weight: 600;
-    padding-bottom: 2rem;
-    padding-top: 3rem;
-    text-align: center;
-    text-transform: uppercase;
-  }
+h6 {
+  font-size: 2rem;
+  font-weight: 800;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* header */
 header {
@@ -469,9 +469,34 @@ strong {
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   grid-gap: 4rem;
   justify-content: center;
-  align-content:center;
+  align-content: center;
   padding: auto;
   padding-bottom: 5rem;
+}
+
+.work {
+  align-items: center;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  width: 90%;
+  height: 800px;
+}
+
+span.work{
+  width: 400px;
+  height: 200px;
+  padding-top: 70px;
+}
+
+.card-image img {
+  width: 40rem;
+  height: 30rem;
+  margin: auto;
+}
+
+.modal-wrapper {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -562,7 +587,7 @@ strong {
     margin: auto;
   }
 
-  .flip-cards {
+  /* .flip-cards {
     display: block;
   }
 
@@ -604,7 +629,7 @@ strong {
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
-}
+}*/
 
   .footer {
     display: center;
@@ -721,45 +746,45 @@ strong {
   padding-bottom: 2rem;
 }
 
-p.two {
-  font-weight: 300;
-  font-size: 1.6rem;
-  line-height: 2.75rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-}
+  p.two {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.75rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
 
-p.three {
-  font-weight: 200;
-  font-size: 1rem;
-  padding-top: 70rem;
-  padding-right: 1rem;
-}
+  p.three {
+    font-weight: 200;
+    font-size: 1rem;
+    padding-top: 70rem;
+    padding-right: 1rem;
+  }
 
-p.four {
-  font-weight: 300;
-  font-size: 1.6rem;
-  text-align: center;
-}
+  p.four {
+    font-weight: 300;
+    font-size: 1.6rem;
+    text-align: center;
+  }
 
-.personas {
-  display: flex;
-  flex-flow: row;
-  align-content: center;
-  justify-content: space-around;
-}
+  .personas {
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    justify-content: space-around;
+  }
 
-.personas: second-child {
-  width: 100px;
-  height: 100px;
-  align-self: center;
-  justify-content: center;
-}
+  .personas: second-child {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    justify-content: center;
+  }
 
-.persona-column {
-  flex-basis: 250px;
-  align-content: center;
-}
+  .persona-column {
+    flex-basis: 250px;
+    align-content: center;
+  }
 
 
   .print-images {
@@ -768,18 +793,107 @@ p.four {
     justify-content: space-around;
     padding-top: 2rem;
     padding-bottom: 5rem;
+    margin: 0 auto;
   }
 
   section {
     align: center;
   }
 
-strong {
-  font-weight: 600;
-}
+  strong {
+    font-weight: 600;
+  }
 
   ul {
     background-color: #FFFFFF;
     height: 3rem;
   }
+
+  .work {
+    align-items: center;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+  }
+
+  span.work{
+    width: 400px;
+    height: 200px;
+    padding-top: 70px;
+  }
+
+  .card-image img {
+    width: 40rem;
+    height: 30rem;
+    margin: auto;
+  }
+
+  /* Modal */
+  .modal img{
+    width: 250px;
+    height: 250px;
+    padding: 1em 1.5em;
+    align-self: center;
+  }
+
+  .modal-open img {
+    width: 450px;
+    height: 450px;
+    padding: 1em 1.5em;
+    align-self: center;
+  }
+
+  .modal-window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  .modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modal-window .modal-wrapper {
+    width: 495px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #cfcfd1;
+    background-color: 20%;
+    align-items: center;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    color: #000;
+    padding-top: 1rem;
+  }
+  .modal-close:hover {
+    color: #fff;
+  }
+
+  .interior {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 4rem;
+    justify-content: center;
+    align-content: center;
+    padding: auto;
+    margin: auto;
+  }
+
 }

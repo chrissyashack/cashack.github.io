@@ -12,7 +12,7 @@
   </head>
   <!--nav bar-->
   <header class="header">
-    <a href="" class="logo" alt="Ashack logo"</a>
+    <a href="index.html" class="logo" alt="Ashack logo"</a>
   <a href="#main-menu" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
 <span class="hamburger" aria-hidden="true"><img src="images/hamburger.svg"></span>
 </a>
@@ -20,9 +20,9 @@
   <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close menu">
 <span class="close" aria-hidden="true"></span></a>
   <ul>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
     </nav>
 <a href="#menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
@@ -35,7 +35,15 @@
               <h6>Tab covers</h6>
                 <div class="tab-covers">
                   <div class="tab-one">
-                    <img src="images/career-guide2.jpg" width="250px" height="250px">
+                    <div class="interior">
+                      <a class="modal" href="#open-modal"><img src="images/career-guide2.jpg"></a>
+                    <div id="open-modal" class="modal-window">
+                    <div class="modal-wrapper">
+                      <a href="#" title="Close" class="modal-close">Close</a>
+                        <div class="modal-open">
+                          <img src="images/career-guide2.jpg">
+                        </div>
+                    </div>
                   </div>
                   <div class="tab-two">
                     <img src="images/state-fair.jpg" width="250px" height="250px">

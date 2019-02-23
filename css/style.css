@@ -18,6 +18,39 @@ html {
     color:#EE1286;
   }
 
+  /* modal */
+  .modal-window {
+      display: none;
+  }
+
+  .modal-c img {
+      width: 100%;
+      height: auto;
+      padding: 1em 1.5em;
+      align-self: center;
+  }
+
+  .modal-bs img {
+      width: 100%;
+      height: auto;
+      padding: 1em 1.5em;
+      align-self: center;
+  }
+
+  .modal-bp img {
+      width: 100%;
+      height: auto;
+      padding: 1em 1.5em;
+      align-self: center;
+  }
+
+  .modal-flow img {
+      width: 100%;
+      height: auto;
+      padding: 1em 1.5em;
+      align-self: center;
+  }
+
   .backpack-homepage {
     padding-bottom: 2rem;
     margin: auto;
@@ -479,25 +512,23 @@ strong {
   margin: 0 auto;
   display: inline-block;
   text-align: center;
-  width: 90%;
-  height: 800px;
+  width: 100%;
+  height: auto;
 }
 
 span.work{
-  width: 400px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   padding-top: 70px;
 }
 
 .card-image img {
-  width: 40rem;
-  height: 30rem;
+  width: 100%;
+  height: auto;
   margin: auto;
 }
 
-.modal-wrapper {
-  display: none;
-}
+
 
 @media screen and (min-width: 768px) {
   body {
@@ -512,7 +543,6 @@ span.work{
 
   .container {
       background-color: white;
-      height: 100vh;
       width: 80%;
       margin: auto;
       justify-content: center;
@@ -554,9 +584,7 @@ span.work{
   }
 
   .case-study {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
   }
 
   .cs-text {
@@ -810,90 +838,145 @@ span.work{
   }
 
   .work {
-    align-items: center;
+    align-content: center;
     margin: 0 auto;
     display: inline-block;
     text-align: center;
     width: 90%;
+    padding-bottom: 5rem;
+    justify-content: center;
   }
 
   span.work{
     width: 400px;
     height: 200px;
-    padding-top: 70px;
+    padding-top: 30px;
+    align-content: center;
   }
 
   .card-image img {
-    width: 40rem;
-    height: 30rem;
+    width: 400px;
+    height: 280px;
     margin: auto;
+    padding: 0px 20px;
   }
+
+  .card-text {
+    padding-left: 4rem;
+  }
+
 
   /* Modal */
-  .modal img{
-    width: 250px;
-    height: 250px;
-    padding: 1em 1.5em;
-    align-self: center;
-  }
 
-  .modal-open img {
-    width: 450px;
-    height: 450px;
-    padding: 1em 1.5em;
-    align-self: center;
-  }
+    .modal-c img {
+        width: 250px;
+        height: 250px;
+        padding: 1em 1.5em;
+        align-self: center;
+    }
 
-  .modal-window {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s;
-  }
-  .modal-window:target {
-    opacity: 1;
-    pointer-events: auto;
-  }
+    .modal-bs img {
+        width: 250px;
+        height: 465px;
+        padding: 1em 1.5em;
+        align-self: center;
+    }
 
-  .modal-window .modal-wrapper {
-    width: 495px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    padding: 2em;
-    background: #cfcfd1;
-    background-color: 20%;
-    align-items: center;
-  }
+    .modal-bp img {
+        width: 300px;
+        height: 225px;
+        padding: 1em 1.5em;
+        align-self: center;
+    }
 
-  .modal-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 70px;
-    text-decoration: none;
-    color: #000;
-    padding-top: 1rem;
-  }
-  .modal-close:hover {
-    color: #fff;
-  }
+    .modal-flow img {
+        width: 300px;
+        height: 250px;
+        padding: 1em 1.5em;
+        align-self: center;
+    }
 
-  .interior {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-gap: 4rem;
-    justify-content: center;
-    align-content: center;
-    padding: auto;
-    margin: auto;
-  }
+    .modal img {
+        width: 250px;
+        height: 250px;
+        padding: 1em 1.5em;
+        align-self: center;
+    }
 
-}
+    .modal-open-c img {
+        width: 450px;
+        height: 450px;
+        padding: 1em 1.5em;
+        align-self: center;
+    }
+
+    .modal-open-bs img {
+        width: 360px;
+        height: 630px;
+        padding: 1em 1.5em;
+        align-self: center;
+    }
+
+    .modal-open-bp img {
+        width: 450px;
+        height: 300px;
+        padding: 1em 1.5em;
+        align-self: center;
+    }
+
+    .modal-open-flow img {
+        width: 450px;
+        height: 380px;
+        padding: 1em 1.5em;
+        align-self: center;
+    }
+
+    .modal-window  {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s;
+        display: block;
+    }
+
+    .modal-window:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .modal-window .modal-wrapper {
+        width: 495px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        padding: 2em;
+        background: #cfcfd1;
+        align-content: center;
+    }
+
+    .modal-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70px;
+        text-decoration: none;
+        color: #000;
+        padding-top: 1rem;
+    }
+
+    .modal-close:hover {
+        color: #fff;
+    }
+
+    .backpack-container {
+      padding-bottom: 5rem;
+    }
+
+  }

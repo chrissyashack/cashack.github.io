@@ -370,7 +370,7 @@ header {
 
   .hero-text {
     margin: auto;
-    max-width: 200px;
+    max-width: 180px;
     padding-top: 18rem;
     text-align: center;
   }
@@ -584,7 +584,7 @@ span.work{
   }
 
   .case-study {
-    display: block;
+    display: flex;
   }
 
   .cs-text {
@@ -911,15 +911,15 @@ span.work{
     }
 
     .modal-open-bs img {
-        width: 360px;
-        height: 630px;
+        width: 340px;
+        height: 610px;
         padding: 1em 1.5em;
         align-self: center;
     }
 
     .modal-open-bp img {
         width: 450px;
-        height: 300px;
+        height: 320px;
         padding: 1em 1.5em;
         align-self: center;
     }
@@ -942,6 +942,8 @@ span.work{
         pointer-events: none;
         transition: all 0.3s;
         display: block;
+        margin: auto;
+        align-content: center;
     }
 
     .modal-window:target {
@@ -977,6 +979,17 @@ span.work{
 
     .backpack-container {
       padding-bottom: 5rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap:wrap;
     }
 
+    .user-flows {
+      padding-bottom: 5rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap:wrap;
+    }
   }

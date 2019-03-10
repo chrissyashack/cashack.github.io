@@ -42,6 +42,7 @@ html {
       height: auto;
       padding: 1em 1.5em;
       align-self: center;
+      box-shadow: 0 0 5px #ddd;
   }
 
   .modal-flow img {
@@ -49,6 +50,7 @@ html {
       height: auto;
       padding: 1em 1.5em;
       align-self: center;
+      box-shadow: 0 0 5px #ddd;
   }
 
   .backpack-homepage {
@@ -58,14 +60,26 @@ html {
     display: flex;
   }
 
-  .bio-photo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 5rem;
-    padding-top: 2rem;
-    margin: auto;
-  }
+   .backpack-homepage img{
+     max-width: 100%;
+     box-shadow: 0 0 5px #ddd;
+   }
+
+   .about {
+     padding-bottom: 5rem;
+     margin: auto;
+   }
+
+   .bio-photo {
+     padding-bottom: 2rem;
+     padding-top: 2rem;
+     margin: auto;
+     max-width: 500px;
+   }
+
+   .bio-photo img{
+     max-width: 100%;
+   }
 
   .button {
     background-color: #EE1286;
@@ -89,7 +103,6 @@ html {
 
   .container {
     background-color: white;
-    height: 100vh;
     padding: 40px;
     margin: auto;
     justify-content: center;
@@ -119,11 +132,15 @@ html {
       padding-right: 1rem;
       padding-top: 1rem;
       padding-bottom: 10rem;
+      background-color: #fff1f8;
+      width: 100%;
     }
 
     .footer {
+      background-color: #fff1f8;
       margin: auto;
       padding-top: 2rem;
+      width: 100%;
     }
 
 /* header styles */
@@ -182,10 +199,11 @@ h6 {
 
 /* header */
 header {
-  background: url("../images/logo_vertical.png")no-repeat;
+  background: url("../images/logo_horizontal.png")no-repeat;
   background-position: 2rem 2rem;
-  background-size: 23rem;
-  border-bottom: .5px solid #000;
+  background-size: 30rem;
+  background-color: #fff1f8;
+  /* border-bottom: .5px solid #000; */
   display: flex;
   flex-direction:row;
   height:10rem;
@@ -322,11 +340,16 @@ header {
     align-items:center;
     background: url("../images/logo_horizontal.png")no-repeat 5% 50%;
     background-size:40rem;
-    border-bottom: .5px solid #000;
+    background-color: #fff1f8;
+    /* border-bottom: .5px solid #000; */
     display: flex;
     flex-direction:row;
     height:10rem;
     width: 100%;
+  }
+
+  header a:hover {
+    color: #EE1286;
   }
 
   .menu-toggle,
@@ -369,8 +392,8 @@ header {
   }
 
   .hero-text {
-    margin: auto;
-    max-width: 180px;
+    margin: 0 auto;
+    max-width: 55%;
     padding-top: 18rem;
     text-align: center;
   }
@@ -410,7 +433,7 @@ header {
   p.one{
   font-weight: 300;
   font-size: 1.6rem;
-  line-height: 2.75rem;
+  line-height: 2.5rem;
   padding-bottom: 2rem;
   }
 
@@ -433,20 +456,19 @@ header {
     font-weight: 300;
     font-size: 1.6rem;
     text-align: center;
+    line-height: 3rem;
   }
 
   .print-images {
     padding-bottom: 8rem;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .print-images img {
+    max-width: 100%;
+    box-shadow: 0 0 5px #ddd;
   }
 
   section {
@@ -497,6 +519,10 @@ strong {
   margin: auto;
 }
 
+.tab-covers img{
+  box-shadow: 0 0 5px #ddd;
+}
+
 .broadsheet {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
@@ -507,6 +533,10 @@ strong {
   padding-bottom: 5rem;
 }
 
+.broadsheet img{
+  box-shadow: 0 0 5px #ddd;
+}
+
 .work {
   align-items: center;
   margin: 0 auto;
@@ -514,6 +544,10 @@ strong {
   text-align: center;
   width: 100%;
   height: auto;
+}
+
+.work img{
+  box-shadow: 0 0 5px #ddd;
 }
 
 span.work{
@@ -527,6 +561,54 @@ span.work{
   height: auto;
   margin: auto;
 }
+
+.cs-text a {
+  text-decoration: none;
+  color:#000;
+}
+.cs-text a:hover {
+  color: #EE1286;
+}
+
+.sites {
+  display: flex;
+  justify-content: space-between;
+  max-width: 490px;
+  margin: auto;
+}
+
+.sites h1{
+  padding-top: 0;
+  padding-bottom:1rem;
+  color:#EE1286;
+}
+
+.sites p{
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin: auto;
+}
+
+.features h1{
+  padding-top: 0;
+  padding-bottom:0;
+  color:#EE1286;
+}
+
+.features p{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+
+
+
 
 
 
@@ -557,17 +639,39 @@ span.work{
       padding-bottom: 5rem;
     }
 
+    .flex-container img{
+      max-width: 100%;
+      margin: auto;
+    }
+
   .backpack-homepage {
     padding-right: 5rem;
     padding-bottom: 5rem;
+    transition: transform .2s;
+  }
+
+  .backpack-homepage img{
+    box-shadow: 0 0 5px #ddd;
+  }
+
+  .backpack-homepage:hover {
+    transform: scale(1.1);
+  }
+
+  .about {
+    padding-bottom: 5rem;
+    margin: auto;
   }
 
   .bio-photo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     padding-bottom: 5rem;
     padding-top: 2rem;
+    margin: auto;
+    max-width: 500px;
+  }
+
+  .bio-photo img{
+    max-width: 100%;
   }
 
   .button {
@@ -592,17 +696,16 @@ span.work{
     align-content:left;
   }
 
-  .credit {
-    float:right;
+  .cs-text a {
+    text-decoration: none;
+    color:#000;
+  }
+  .cs-text a:hover {
+    color: #EE1286;
   }
 
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
+  .credit {
+    float:right;
   }
 
   .flex-container-footer {
@@ -614,50 +717,6 @@ span.work{
     max-width: 400px;
     margin: auto;
   }
-
-  /* .flip-cards {
-    display: block;
-  }
-
-  .flip-card-one .flip-card-two {
-  background-color: transparent;
-  width: 400px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-one-inner .flip-card-two-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
-}
-
-.flip-card-one:hover .flip-card-one-inner .flip-card-two:hover .flip-card-two-inner  {
-  transform: rotateY(180deg);
-}
-
-.flip-card-one-front, .flip-card-one-back .flip-card-two-front, .flip-card-two-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-one-front .flip-card-two-front {
-  background-color: #bbb;
-  color: black;
-  z-index: 2;
-}
-
-.flip-card-one-back .flip-card-two-back {
-  background-color: #EE1286;
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
-}*/
 
   .footer {
     display: center;
@@ -760,9 +819,26 @@ span.work{
     text-align: center;
   }
 
+  .study p{
+    max-width: 690px;
+    align-content: center;
+    margin: auto;
+  }
+
+  .study h3 {
+    max-width: 690px;
+    margin: auto;
+  }
+
+  .about p{
+    max-width: 690px;
+    align-content: center;
+    margin: auto;
+  }
+
   p {
     font-size: 1.6rem;
-    line-height: 2.25rem;
+    line-height: 2.4rem;
     padding-bottom: 5rem;
     font-weight: 300;
   }
@@ -793,13 +869,17 @@ span.work{
     font-weight: 300;
     font-size: 1.6rem;
     text-align: center;
+    line-height: 3rem;
   }
 
   .personas {
     display: flex;
     flex-flow: row;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 690px;
+    margin: auto;
+    padding-bottom: 2rem;
   }
 
   .personas: second-child {
@@ -810,18 +890,24 @@ span.work{
   }
 
   .persona-column {
-    flex-basis: 250px;
+    max-width: 180px;
     align-content: center;
   }
 
-
   .print-images {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+    transition: transform .2s;
+  }
+
+  .print-images img:hover{
+    transform: scale(1.1);
+  }
+
+  .print-images img {
+    max-width: 100%;
+    box-shadow: 0 0 5px #ddd;
   }
 
   section {
@@ -842,9 +928,13 @@ span.work{
     margin: 0 auto;
     display: inline-block;
     text-align: center;
-    width: 90%;
+    width: 100%;
     padding-bottom: 5rem;
     justify-content: center;
+  }
+
+  .work img{
+    box-shadow: 0 0 5px #ddd;
   }
 
   span.work{
@@ -852,13 +942,18 @@ span.work{
     height: 200px;
     padding-top: 30px;
     align-content: center;
+    margin: auto 20px;
   }
 
   .card-image img {
-    width: 400px;
+    max-width: 100%;
     height: 280px;
     margin: auto;
-    padding: 0px 20px;
+    transition: transform .2s;
+  }
+
+  .card-image:hover {
+    transform:scale(1.1);
   }
 
   .card-text {
@@ -980,16 +1075,73 @@ span.work{
     .backpack-container {
       padding-bottom: 5rem;
       margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      flex-wrap:wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+      grid-gap: 2rem;
     }
 
     .user-flows {
       padding-bottom: 5rem;
       margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 2rem;
+    }
+
+    .user-flows img{
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .tab-covers img{
+      box-shadow: 0 0 5px #ddd;
+      transition: transform .2s;
+    }
+
+    .tab-covers img:hover{
+      transform: scale(1.1);
+    }
+
+    .broadsheet img{
+      box-shadow: 0 0 5px #ddd;
+    }
+
+    .broadsheet img:hover{
+      transform: scale(1.1);
+    }
+
+    .sites {
       display: flex;
-      justify-content: center;
-      flex-wrap:wrap;
+      justify-content: space-between;
+      max-width: 490px;
+      margin: auto;
+    }
+
+    .sites h1{
+      padding-top: 0;
+      padding-bottom:1rem;
+      color:#EE1286;
+    }
+
+    .sites p{
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      max-width: 690px;
+      margin: auto;
+    }
+
+    .features h1{
+      padding-top: 0;
+      padding-bottom:0;
+      color:#EE1286;
+    }
+
+    .features p{
+      text-align: center;
+      padding-bottom: 2rem;
     }
   }

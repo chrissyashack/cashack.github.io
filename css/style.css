@@ -999,32 +999,53 @@ span.work{
     }
 
     .modal-open-c img {
-        width: 450px;
-        height: 450px;
-        padding: 1em 1.5em;
-        align-self: center;
+      width: 100%;
+      height: 100%;
+      padding: 1em 1.5em;
+      align-self: center;
+      box-shadow: none;
+    }
+
+    .modal-open-c img:hover{
+      transform:none;
     }
 
     .modal-open-bs img {
-        width: 340px;
-        height: 610px;
-        padding: 1em 1.5em;
-        align-self: center;
+      width: 60%;
+      height: 60%;
+      padding: 1em 1.5em;
+      align-self: center;
+      box-shadow: none;
+      margin: auto;
+    }
+
+    .modal-open-bs img:hover{
+      transform:none;
     }
 
     .modal-open-bp img {
-        width: 450px;
-        height: 320px;
+        width: 100%;
+        height: 100%;
         padding: 1em 1.5em;
         align-self: center;
+        box-shadow: none;
+    }
+
+    .modal-open-bp img:hover{
+      transform:none;
     }
 
     .modal-open-flow img {
-        width: 450px;
-        height: 380px;
-        padding: 1em 1.5em;
-        align-self: center;
-    }
+      width: 100%;
+      height: 100%;
+      padding: 1em 1.5em;
+      align-self: center;
+      box-shadow: none;
+      }
+
+      .modal-open-flow img:hover{
+        transform:none;
+      }
 
     .modal-window  {
         position: fixed;
@@ -1047,14 +1068,14 @@ span.work{
     }
 
     .modal-window .modal-wrapper {
-        width: 495px;
+        width: 595px;
         position: absolute;
         top: 50%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
         padding: 2em;
-        background: #cfcfd1;
+        background: #ddd;
         align-content: center;
     }
 
@@ -1078,6 +1099,11 @@ span.work{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, auto));
       grid-gap: 2rem;
+      transition: transform .2s;
+    }
+
+    .backpack-container img:hover{
+      transform: scale(1.1);
     }
 
     .user-flows {
@@ -1086,11 +1112,16 @@ span.work{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-gap: 2rem;
+      transition: transform .2s;
     }
 
     .user-flows img{
       max-width: 100%;
       margin: auto;
+    }
+
+    .user-flows img:hover{
+      transform: scale(1.1);
     }
 
     .tab-covers img{

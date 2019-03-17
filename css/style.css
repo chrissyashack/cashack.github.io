@@ -338,7 +338,7 @@ header {
 @media (min-width: 768px) {
   header {
     align-items:center;
-    background: url("../images/logo_horizontal.png")no-repeat 5% 50%;
+    background: url("../images/ashack_logo_horizontal_centered.png")no-repeat 5% 50%;
     background-size:40rem;
     background-color: #fff1f8;
     /* border-bottom: .5px solid #000; */
@@ -656,6 +656,11 @@ span.work{
 
   .backpack-homepage:hover {
     transform: scale(1.1);
+  }
+
+  .branding img{
+    max-width: 100%;
+    margin: auto;
   }
 
   .about {

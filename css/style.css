@@ -682,6 +682,7 @@ span.work{
   .branding img{
     max-width: 100%;
     margin: auto;
+    padding: 2rem;
   }
 
   .about {
@@ -1209,11 +1210,5 @@ span.work{
     .features p{
       text-align: center;
       padding-bottom: 2rem;
-    }
-
-    .branding {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
     }
   }

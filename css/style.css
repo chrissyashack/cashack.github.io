@@ -199,7 +199,7 @@ h6 {
 
 /* header */
 header {
-  background: url("../images/logo_horizontal.png")no-repeat;
+  /* background: url("../images/logo_horizontal.png")no-repeat; */
   background-position: 2rem 2rem;
   background-size: 30rem;
   background-color: #fff1f8;
@@ -209,15 +209,22 @@ header {
   height:10rem;
   width: 100%;
 }
+
+header img {
+  max-width: 350px;
+  margin: auto;
+  padding: 2rem;
+}
 /* Button styling */
 .menu-toggle {
   background: none;
   display: block;
   height: 3rem;
   position: absolute;
-  right: 2rem;
-  top: 4rem;
+  right: 4rem;
+  top: 1rem;
   width: 3rem;
+  float: right;
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
@@ -338,7 +345,7 @@ header {
 @media (min-width: 768px) {
   header {
     align-items:center;
-    background: url("../images/ashack_logo_horizontal_centered.png")no-repeat 5% 50%;
+    /* background: url("../images/ashack_logo_horizontal_centered.png")no-repeat 5% 50%; */
     background-size:40rem;
     background-color: #fff1f8;
     /* border-bottom: .5px solid #000; */
@@ -350,6 +357,12 @@ header {
 
   header a:hover {
     color: #EE1286;
+  }
+
+  header img {
+    max-width: 420px;
+    padding-left: 2rem;
+    margin: auto;
   }
 
   .menu-toggle,
@@ -604,6 +617,14 @@ span.work{
 .features p{
   text-align: center;
   padding-bottom: 2rem;
+}
+
+.user-stories{
+  display: flex;
+  flex-wrap:wrap;
+  max-width: 720px;
+  margin:auto;
+  padding-top: 0;
 }
 
 
@@ -928,6 +949,15 @@ span.work{
     height: 3rem;
   }
 
+  .user-stories{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    max-width: 720px;
+    margin:auto;
+    padding-top: 0;
+  }
+
   .work {
     align-content: center;
     margin: 0 auto;
@@ -1011,7 +1041,7 @@ span.work{
       box-shadow: none;
     }
 
-    .modal-open-c img:hover{
+    .tab-covers .modal-open-c img:hover{
       transform:none;
     }
 
@@ -1024,7 +1054,7 @@ span.work{
       margin: auto;
     }
 
-    .modal-open-bs img:hover{
+    .broadsheet .modal-open-bs img:hover{
       transform:none;
     }
 
@@ -1036,7 +1066,7 @@ span.work{
         box-shadow: none;
     }
 
-    .modal-open-bp img:hover{
+    .backpack-container .modal-open-bp img:hover{
       transform:none;
     }
 
@@ -1048,7 +1078,7 @@ span.work{
       box-shadow: none;
       }
 
-      .modal-open-flow img:hover{
+      .user-flows .modal-open-flow img:hover{
         transform:none;
       }
 
@@ -1091,7 +1121,7 @@ span.work{
         width: 70px;
         text-decoration: none;
         color: #000;
-        padding-top: 1rem;
+        padding: 1rem;
     }
 
     .modal-close:hover {
@@ -1179,5 +1209,11 @@ span.work{
     .features p{
       text-align: center;
       padding-bottom: 2rem;
+    }
+
+    .branding {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
   }
